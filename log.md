@@ -1,5 +1,9 @@
 ### Signing in @ 2:18AM, 2015-10-20
 
+- Began tracking using Git. Remote repo at https://github.com/thegwiz/personal-site
+
+### Signing in @ 2:18AM, 2015-10-20
+
 I was wrestling with making paragraphs center vertically in the grid, which Fluidable does not support. There is the "dsiplay: table-cell + vertical-align: middle + fixed height" hack, but that got me thinking again: why am I messing up my markup and relying on CSS hacks when I should be learning to incorporate the progressive web standards, like HTML5's new semantic tags and flexbox? I considered using flexbox but I couldn't forego support for the older IEs. I searched for grid systems again and I found 2 grids which use Flexbox but falls back to inline-block based grids (traditional CSS grid system) when flexbox is not supported.
 
 #### ToDo
