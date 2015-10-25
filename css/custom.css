@@ -1,0 +1,132 @@
+/* Grid container overrides */
+
+/*  Tablet and up   */
+@media (max-width: 767px) {
+  .hide-mb {
+    display: none;
+  }
+}
+
+/*  Desktop and up   */
+@media (min-width: 768px) {
+  .hide-tab {
+    display: none;
+  }
+}
+
+/*===========================*/
+
+
+.section {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.section.large-font {
+    font-size: 1.5em;
+}
+
+.section.hero {
+    padding-top: 4em;
+    padding-bottom: 4em;
+
+    background-image: url("../images/clouds2.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+.section.hero.dark-theme {
+    background-image: url("../images/nebula2.jpg");
+}
+
+.section.devlog {
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.25);
+}
+
+
+/* Theming Stuff */
+.themable {
+    /* http://stackoverflow.com/questions/7302824/animating-addclass-removeclass-with-jquery */
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.dark-theme {
+    color: #DDD;
+    background-color: #424242;
+}
+
+img.responsive {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+img.rounded {
+    border-radius: 50% 50% 50% 50%;
+}
+
+img.em10 {
+    height: 10em;
+}
+
+#user {
+    height: 10em;
+}
+
+@media (max-width: 768px) {
+    .section.hero {
+        text-align: center;
+    }
+}
+
+#hero-hi {
+    font-size: 3em;
+}
+#hero-name {
+    font-size: 2em;
+}
+#hero-name strong {
+    font-weight: bolder;
+    font-style: italic;
+}
+#hero-ticker li {
+    font-size: 2em;
+    list-style-type: none;
+}
+#hero-ticker > ul {
+    width: 100%;
+}
+
+#dev-log {
+    display: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#dev-log-toggle {
+    padding: 4px;
+    background-color: #DDD;
+    border: 0;
+    border-radius: 2px;
+    color: #222;
+}
+#dev-log-toggle:hover {
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.25);
+}
+#dev-log-toggle:active {
+    box-shadow: inset 0px 0px 2px 2px rgba(0,0,0,0.25);
+}
+
+.valign-content {
+    display: table-cell;
+    vertical-align: middle;
+}

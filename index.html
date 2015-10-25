@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Gautham Yerroju">
+    <meta name="description" content="Gautham Yerroju's personal website.">
+    <meta name="keywords" content="portfolio,coding,personal">
+
+    <link rel="icon" href="images/favicon.png">
+
+    <title>Gautham's Website</title>
+
+    <!-- <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'> -->
+    <link href='fonts/oxygen.css' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+        body { font-family: 'Oxygen', sans-serif; }
+        .light-font { font-weight: 300; }
+    </style>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fluidable/fluidable-min.css">
+
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="light-font">
+
+    <div class="section hero large-font">
+        <div class="container">
+            <div class="col-group">
+                <div class="col-mb-12 col-6">
+                    <img src="images/user.png" class="responsive rounded em10" id="user" />
+                </div>
+                <div class="col-mb-12 col-6">
+                    <div id="hero-hi">Hi!</div>
+                    <div id="hero-name">I'm <strong>Gautham Yerroju</strong>.</div>
+                    <div id="hero-ticker">
+                        <ul>
+                            <li>Programmer</li>
+                            <li>Gamer</li>
+                            <li>Artist</li>
+                            <li>Sci-Fi Buff</li>
+                            <li>Philosopher</li>
+                            <li>BatFan</li>
+                            <li>INFP</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-mb-12">
+                    <p>I love to code and design. On a random day you'll find me coding, gaming, blogging or just thinking about the great questions of the universe. My dream is to build a J.A.R.V.I.S someday and of course, be Batman. A guy can dream.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section devlog">
+        <div class="container">
+            <div class="col-group">
+                <div class="col-mb-12">
+                    <p><strong>This website is under renovation.</strong> Meanwhile, have a look at the dev log (rendered from markdown using <a href="https://github.com/evilstreak/markdown-js">markdown-js</a>). <button id="dev-log-toggle">Take a look...</button></p>
+                    <div id="dev-log">
+                        Loading dev log...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section intro-me large-font">
+        <div class="container">
+            <div class="col-group">
+                <div class="col-mb-12 col-5 col-dt-4">
+                    <!-- http://www.freeimages.com/photo/buddha-1310506 -->
+                    <img src="images/buddha_light.png" class="responsive rounded em10" />
+                </div>
+                <div class="col-mb-12 col-7 col-dt-8">
+                    <p>
+                        I am Gautham, <span id="age">25</span> years young, born in Hyderabad India. I am an INFP. Nicknamed the Idealist and the Dreamer, I constantly try to find my place in the world and think about the big questions of the universe.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section intro-job large-font">
+        <div class="container">
+            <div class="col-group">
+                <div class="col-mb-12 hide-tab">
+                    <img src="images/pc_light.png" class="responsive rounded em10" />
+                </div>
+                <div class="col-mb-12 col-7 col-dt-8">
+                    <p>
+                        A programmer by profession, I have a bachelors degree in Computer Science and Engineering and over three years of experience building automation frameworks and full stack web development at FactSet Research Systems.
+                    </p>
+                </div>
+                <div class="hide-mb col-5 col-dt-4">
+                    <img src="images/pc_light.png" class="responsive rounded em10" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section intro-hobby large-font">
+        <div class="container">
+            <div class="col-group">
+                <div class="col-mb-12 col-5 col-dt-4">
+                    <img src="images/hobby_light.png" class="responsive rounded em10" />
+                </div>
+                <div class="col-mb-12 col-7 col-dt-8">
+                    <p>
+                        In my free time, I like to play games, read books, catch up on tech blogs, do some blogging myself, watch TV shows and occasionally, doodle and play the keyboard.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript">
+        // Age calculation
+        function getAge(dateString) {
+            var today = new Date();
+            var birthDate = new Date(dateString);
+            var age = today.getFullYear() - birthDate.getFullYear();
+            var m = today.getMonth() - birthDate.getMonth();
+            if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+            return age;
+        }
+        $("#age").html(getAge("1990-08-06"));
+
+        // Dev log toggle
+        $("#dev-log-toggle").click(function() {
+            $("#dev-log").slideToggle(400, function() {
+                if ( $("#dev-log-toggle").html() == "Take a look..." ) {
+                    $("#dev-log-toggle").html("Hide the log");
+                } else {
+                    $("#dev-log-toggle").html("Take a look...");
+                }
+            });
+
+        });
+    </script>
+
+    <script src="js/jquery.vticker.min.js"></script>
+    <script type="text/javascript">
+        $('#hero-ticker').vTicker('init', {
+            speed: 500,
+            pause: 2000
+        });
+    </script>
+    <script src="js/markdown.min.js"></script>
+    <script type="text/javascript">
+        $.ajax("log.md", {
+            cache: false,
+            dataType: "text",
+            success: function(data) {
+                $("#dev-log").html(markdown.toHTML(data));
+            },
+            error: function(jqXHR, statusText, errorThrown) {
+                $("#dev-log").html("Hm, there seems to be a problem loading the dev log.<br/>" + statusText + " " + jqXHR.status + ": " + errorThrown);
+                console.log("Error loading dev log.", jqXHR, statusText, errorThrown);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+/* https://www.google.com/fonts/specimen/Oxygen */
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Oxygen Light'), local('Oxygen-Light'), url(Oxygen-Light.woff) format('woff2');
+}
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oxygen'), local('Oxygen-Regular'), url(Oxygen-Regular.woff) format('woff2');
+}
