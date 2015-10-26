@@ -115,8 +115,6 @@ img.em10 {
     font-weight: bold;
     font-style: italic;
     text-transform: uppercase;
-
-    text-align: center;
 }
 #hero-ticker li {
     list-style-type: none;
@@ -124,8 +122,6 @@ img.em10 {
     font-size: 2em;
     font-family: 'Play', sans-serif;
     font-style: italic;
-
-    text-align: center;
 }
 #hero-ticker > ul {
     width: 100%;
