@@ -1,4 +1,4 @@
-### Signing in @ 2:18AM, 2015-10-20
+### Signing in @ 10:45PM, 2015-10-25
 
 - Began tracking using Git. Remote repo at https://github.com/thegwiz/personal-site
 
