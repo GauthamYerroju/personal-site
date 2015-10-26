@@ -1,3 +1,8 @@
+### Signing in @ 1:00AM, 2015-10-27
+
+- Added the Play font to the hero section text.
+- Updated the hero section text.
+
 ### Signing in @ 10:45PM, 2015-10-25
 
 - Began tracking using Git. Remote repo at https://github.com/thegwiz/personal-site
