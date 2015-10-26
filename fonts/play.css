@@ -1,0 +1,13 @@
+/* https://www.google.com/fonts/specimen/Play */
+@font-face {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Play Regular'), local('Play-Regular'), url(Play-Regular.woff) format('woff2');
+}
+@font-face {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Play Bold'), local('Play-Bold'), url(Play-Bold.woff) format('woff2');
+}

@@ -16,6 +16,10 @@
 
 /*===========================*/
 
+body {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+}
 
 .section {
     padding-top: 2em;
@@ -84,19 +88,19 @@ img.em10 {
     }
 }
 
-#hero-hi {
-    font-size: 3em;
-}
 #hero-name {
-    font-size: 2em;
-}
-#hero-name strong {
-    font-weight: bolder;
+    font-size: 3em;
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
     font-style: italic;
+    text-transform: uppercase;
 }
 #hero-ticker li {
-    font-size: 2em;
     list-style-type: none;
+
+    font-size: 2em;
+    font-family: 'Play', sans-serif;
+    font-style: italic;
 }
 #hero-ticker > ul {
     width: 100%;
