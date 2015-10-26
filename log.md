@@ -1,3 +1,7 @@
+### Signing in @ 2:22AM, 2015-10-27
+
+- Implemented theme switcher (yin-yang symbol at the top right).
+
 ### Signing in @ 1:00AM, 2015-10-27
 
 - Added the Play font to the hero section text.

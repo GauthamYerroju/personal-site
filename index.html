@@ -25,8 +25,9 @@
 </head>
 
 <body>
+    <div id="theme-switch" class="themable"></div>
 
-    <div class="section hero large-font">
+    <div class="section hero large-font themable">
         <div class="container">
             <div class="col-group">
                 <div class="col-mb-12 col-6 col-dt-4">
@@ -54,7 +55,7 @@
         </div>
     </div>
 
-    <div class="section devlog">
+    <div class="section devlog themable">
         <div class="container">
             <div class="col-group">
                 <div class="col-mb-12">
@@ -67,7 +68,7 @@
         </div>
     </div>
 
-    <div class="section intro-me large-font">
+    <div class="section intro-me large-font themable">
         <div class="container">
             <div class="col-group">
                 <div class="col-mb-12 col-5 col-dt-4">
@@ -82,7 +83,7 @@
             </div>
         </div>
     </div>
-    <div class="section intro-job large-font">
+    <div class="section intro-job large-font themable">
         <div class="container">
             <div class="col-group">
                 <div class="col-mb-12 hide-tab">
@@ -99,7 +100,7 @@
             </div>
         </div>
     </div>
-    <div class="section intro-hobby large-font">
+    <div class="section intro-hobby large-font themable">
         <div class="container">
             <div class="col-group">
                 <div class="col-mb-12 col-5 col-dt-4">
@@ -132,6 +133,11 @@
             return age;
         }
         $("#age").html(getAge("1990-08-06"));
+
+        // Theme switch
+        $("#theme-switch").click(function() {
+            $(".themable").toggleClass('dark-theme');
+        });
 
         // Dev log toggle
         $("#dev-log-toggle").click(function() {
