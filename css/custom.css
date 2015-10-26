@@ -125,6 +125,16 @@ img.em10 {
     width: 100%;
 }
 
+/* Low screen size font fix */
+@media (max-width: 767px) {
+    #hero-name {
+        font-size: 2.2em;
+    }
+    #hero-ticker li {
+        font-size: 1.5em;
+    }
+}
+
 #dev-log {
     display: none;
     padding: 8px;
