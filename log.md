@@ -1,3 +1,8 @@
+### Signing in @ 9:48PM, 2015-10-28
+
+- Read up on semantic markup, decided not to use them. Did not make much sense to use them.
+- Tried Reflex grid for flexbox support, but reverted to Fluidable grid. With flexbox, vertical centering of columns works but repsonsive images behave strangely. Sticking with what works.
+
 ### Signing in @ 2:22AM, 2015-10-27
 
 - Implemented theme switcher (yin-yang symbol at the top right).
