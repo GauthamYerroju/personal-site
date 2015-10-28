@@ -23,17 +23,16 @@ body {
     font-family: 'Oxygen', sans-serif;
     font-weight: 300;
 }
-.heavy-font {
+.font--heavy {
     font-weight: 400;
+}
+.font--large {
+    font-size: 1.5em;
 }
 
 .section {
     margin-top: 2em;
     margin-bottom: 2em;
-}
-
-.section.large-font {
-    font-size: 1.5em;
 }
 
 .section.hero {
@@ -45,7 +44,6 @@ body {
     background-image: url("../images/clouds2.jpg");
     background-size: cover;
     background-position: center;
-
 }
 .section.hero.dark-theme {
     background-image: url("../images/nebula2.jpg");
@@ -82,6 +80,7 @@ body.dark-theme {
     background-image: url('../images/yinyang.png');
     background-repeat: no-repeat;
     background-size: contain;
+    z-index: 100;
 }
 #theme-switch.dark-theme {
     transform: rotate(180deg);
@@ -91,6 +90,7 @@ body.dark-theme {
 img.responsive {
     display: block;
     max-width: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
 }
@@ -146,7 +146,7 @@ img.em10 {
     border-radius: 4px;
 }
 
-.text-center {
+.text--center {
     text-align: center;
 }
 
