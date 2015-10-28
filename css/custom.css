@@ -29,6 +29,9 @@ body {
 .font--large {
     font-size: 1.5em;
 }
+.text--center {
+    text-align: center;
+}
 
 .section {
     margin-top: 2em;
@@ -74,9 +77,9 @@ body.dark-theme {
     top: 1em;
     right: 1em;
 
-    width: 3em;
-    height: 3em;
-    border-radius: 1.5em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
     background-image: url('../images/yinyang.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -144,10 +147,6 @@ img.em10 {
     display: none;
     padding: 8px;
     border-radius: 4px;
-}
-
-.text--center {
-    text-align: center;
 }
 
 #dev-log-toggle {
