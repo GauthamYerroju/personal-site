@@ -1,0 +1,96 @@
+/* All CSS for the nav bar */
+
+.menu-switch {
+    position: fixed;
+    top: 1em;
+    left: 1em;
+
+    width: 2em;
+    height: 2em;
+    /*border-radius: 50%;*/
+    background-color: rgba(0, 0, 0, 0.5);
+    /*background-image: url('../images/logo_2.png');
+    background-size: contain;*/
+    z-index: 200;
+
+    /*box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);*/
+
+    /* http://stackoverflow.com/questions/7302824/animating-addclass-removeclass-with-jquery */
+    -webkit-transition: all 0.3s ease !important;
+    -moz-transition: all 0.3s ease !important;
+    -o-transition: all 0.3s ease !important;
+    transition: all 0.3s ease !important;
+}
+.menu-switch.menu--open {
+    /*left: 16em;*/
+}
+
+.slider {
+    position: fixed;
+    left: -15em;
+    z-index: 100;
+
+    width: 15em;
+    height: 150%;
+    overflow-y: hidden;
+
+    background-color: white;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+
+    /* http://stackoverflow.com/questions/7302824/animating-addclass-removeclass-with-jquery */
+    -webkit-transition: all 0.3s ease !important;
+    -moz-transition: all 0.3s ease !important;
+    -o-transition: all 0.3s ease !important;
+    transition: all 0.3s ease !important;
+}
+.slider.menu--open {
+    left: 0;
+}
+
+.slider a {
+    display: block;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    /* http://stackoverflow.com/questions/7302824/animating-addclass-removeclass-with-jquery */
+    -webkit-transition: all 0.3s ease !important;
+    -moz-transition: all 0.3s ease !important;
+    -o-transition: all 0.3s ease !important;
+    transition: all 0.3s ease !important;
+}
+.slider a:link, .slider a:visited, .slider a:active {
+    color: gray;
+}
+.slider a:hover {
+    color: #424242;
+}
+
+
+
+
+.slider > .menu-mask {
+    position: fixed;
+    left: 240px;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* Dark theme */
+.slider.dark-theme {
+    color: #DDD;
+    background-color: #555;
+}
+.slider.dark-theme a:link, .slider.dark-theme a:visited, .slider.dark-theme a:active {
+    color: #DDD;
+}
+.slider.dark-theme a:hover {
+    background-color: #AAA;
+}
