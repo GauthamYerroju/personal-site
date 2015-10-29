@@ -44,8 +44,8 @@ body {
     margin-top: 0;
     margin-bottom: 0;
 
-    background-image: url("../images/clouds2.jpg");
     background-size: cover;
+    background-image: url("../images/clouds2.jpg");
     background-position: center;
 }
 .section.hero.dark-theme {
@@ -67,9 +67,9 @@ body {
     transition: all 0.5s ease;
 }
 
-body.dark-theme {
-    color: #DDD;
-    background-color: #424242;
+.dark-theme {
+    color: #EEE;
+    background-color: #5C5C5C;
 }
 
 #theme-switch {
@@ -105,9 +105,6 @@ img.em10 {
     height: 10em;
 }
 
-#user {
-    height: 10em;
-}
 
 @media (max-width: 768px) {
     .section.hero {
