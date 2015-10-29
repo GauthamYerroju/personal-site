@@ -1,3 +1,7 @@
+### Signing in @ 8:12PM, 2015-10-29
+
+- Added logo images.
+
 ### Signing in @ 9:48PM, 2015-10-28
 
 - Read up on semantic markup, decided not to use them. Did not make much sense to use them.
