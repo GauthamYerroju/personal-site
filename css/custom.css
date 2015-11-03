@@ -16,6 +16,17 @@
 
 /*===========================*/
 
+/*
+    Box sizing: border box fix to make life easier.
+    Ref: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
     color: #424242;
     background-color: white;
