@@ -27,6 +27,8 @@ html {
   box-sizing: inherit;
 }
 
+/*===========================*/
+
 body {
     color: #424242;
     background-color: white;
@@ -38,7 +40,7 @@ body {
     font-weight: 400;
 }
 .font--large {
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 .text--center {
     text-align: center;
@@ -116,6 +118,10 @@ img.em10 {
     height: 10em;
 }
 
+img.about-badge {
+    height: 7em;
+}
+
 
 @media (max-width: 768px) {
     .section.hero {
@@ -126,16 +132,12 @@ img.em10 {
 #hero-name {
     font-size: 3em;
     font-family: 'Play', sans-serif;
-    font-weight: bold;
-    font-style: italic;
-    text-transform: uppercase;
 }
 #hero-ticker li {
     list-style-type: none;
 
     font-size: 2em;
     font-family: 'Play', sans-serif;
-    font-style: italic;
 }
 #hero-ticker > ul {
     width: 100%;

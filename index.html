@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="css/fluidable/fluidable-min.css">
 
     <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/nav.css">
 </head>
 
 <body class="themable">
@@ -37,7 +36,6 @@
         <!-- <div>Social Network buttons here</div> -->
     </nav>
 
-
     <div class="section hero font--large themable">
         <div class="container">
             <div class="col-group">
@@ -45,7 +43,6 @@
                     <img src="images/user.png" class="responsive rounded em10" id="user" />
                 </div>
                 <div class="col-mb-12 col-6 col-dt-8">
-                    <!-- <div id="hero-name"><strong>Gautham Yerroju</strong></div> -->
                     <div id="hero-name">Gautham Yerroju</div>
                     <div id="hero-ticker">
                         <ul>
@@ -70,7 +67,7 @@
         <div class="container">
             <div class="col-group">
                 <div class="col-mb-12">
-                    <p><strong>This website is under renovation.</strong> Meanwhile, have a look at the dev log (rendered from markdown using <a href="https://github.com/evilstreak/markdown-js">markdown-js</a>). <button id="dev-log-toggle">Take a look...</button></p>
+                    <p><strong>This website is under renovation.</strong> Meanwhile, have a look at the dev log (rendered from markdown using <a href="https://github.com/evilstreak/markdown-js">markdown-js</a>). <button id="dev-log-toggle">Take a look...</button> <button id="dev-log-destroy">Hide this</button></p>
                     <div id="dev-log">
                         Loading dev log...
                     </div>
@@ -82,11 +79,11 @@
     <div class="section intro-me font--large">
         <div class="container">
             <div class="col-group">
-                <div class="col-mb-12 col-5 col-dt-4">
+                <div class="col-mb-12 col-5 col-dt-3">
                     <!-- http://www.freeimages.com/photo/buddha-1310506 -->
-                    <img src="images/buddha_light.png" class="responsive rounded em10" />
+                    <img src="images/buddha_light.png" class="responsive rounded about-badge" />
                 </div>
-                <div class="col-mb-12 col-7 col-dt-8">
+                <div class="col-mb-12 col-7 col-dt-9">
                     <p>
                         I am Gautham, <span id="age">25</span> years young, born in Hyderabad India. I am an INFP. Nicknamed the Idealist and the Dreamer, I constantly try to find my place in the world and think about the big questions of the universe.
                     </p>
@@ -98,15 +95,15 @@
         <div class="container">
             <div class="col-group">
                 <div class="col-mb-12 hide-tab">
-                    <img src="images/pc_light.png" class="responsive rounded em10" />
+                    <img src="images/pc_light.png" class="responsive rounded about-badge" />
                 </div>
-                <div class="col-mb-12 col-7 col-dt-8">
+                <div class="col-mb-12 col-7 col-dt-9">
                     <p>
                         A programmer by profession, I have a bachelors degree in Computer Science and Engineering and over three years of experience building automation frameworks and full stack web development at FactSet Research Systems.
                     </p>
                 </div>
-                <div class="hide-mb col-5 col-dt-4">
-                    <img src="images/pc_light.png" class="responsive rounded em10" />
+                <div class="hide-mb col-5 col-dt-3">
+                    <img src="images/pc_light.png" class="responsive rounded about-badge" />
                 </div>
             </div>
         </div>
@@ -114,10 +111,10 @@
     <div class="section intro-hobby font--large">
         <div class="container">
             <div class="col-group">
-                <div class="col-mb-12 col-5 col-dt-4">
-                    <img src="images/hobby_light.png" class="responsive rounded em10" />
+                <div class="col-mb-12 col-5 col-dt-3">
+                    <img src="images/hobby_light.png" class="responsive rounded about-badge" />
                 </div>
-                <div class="col-mb-12 col-7 col-dt-8">
+                <div class="col-mb-12 col-7 col-dt-9">
                     <p>
                         In my free time, I like to play games, read books, catch up on tech blogs, do some blogging myself, watch TV shows and occasionally, doodle and play the keyboard.
                     </p>
@@ -160,7 +157,10 @@
                     $("#dev-log-toggle").html("Take a look...");
                 }
             });
+        });
 
+        $("#dev-log-destroy").click(function() {
+            $(".section.devlog").hide();
         });
     </script>
 
