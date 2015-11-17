@@ -40,20 +40,20 @@ body {
     font-weight: 400;
 }
 .font--large {
-    font-size: 1.25em;
+    font-size: 1.25rem;
 }
 .text--center {
     text-align: center;
 }
 
 .section {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .section.hero {
-    padding-top: 4em;
-    padding-bottom: 4em;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     margin-top: 0;
     margin-bottom: 0;
 
@@ -87,11 +87,11 @@ body {
 
 #theme-switch {
     position: fixed;
-    top: 1em;
-    right: 1em;
+    top: 1rem;
+    right: 1rem;
 
-    width: 2em;
-    height: 2em;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     background-image: url('../images/yinyang.png');
     background-repeat: no-repeat;
@@ -114,14 +114,13 @@ img.rounded {
     border-radius: 50% 50% 50% 50%;
 }
 
-img.em10 {
-    height: 10em;
-}
-
 img.about-badge {
-    height: 7em;
+    height: 7rem;
 }
 
+#user {
+    height: 10rem;
+}
 
 @media (max-width: 768px) {
     .section.hero {
@@ -130,13 +129,13 @@ img.about-badge {
 }
 
 #hero-name {
-    font-size: 3em;
+    font-size: 3rem;
     font-family: 'Play', sans-serif;
 }
 #hero-ticker li {
     list-style-type: none;
 
-    font-size: 2em;
+    font-size: 2rem;
     font-family: 'Play', sans-serif;
 }
 #hero-ticker > ul {
@@ -146,10 +145,10 @@ img.about-badge {
 /* Low screen size font fix */
 @media (max-width: 767px) {
     #hero-name {
-        font-size: 2.2em;
+        font-size: 2.2rem;
     }
     #hero-ticker li {
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 }
 

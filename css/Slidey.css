@@ -1,0 +1,222 @@
+/*
+ * Slidey 0.1
+ *
+ * Creator: Gautham Yerroju
+ * Site: http://github.com/thegwiz/Slidey
+ * Date: 2015-10-30
+ */
+
+/* Styling for the drawer */
+.slidey {
+    box-sizing: border-box;
+
+    position: fixed;
+    display: block;
+    top: 0;
+    z-index: 100;
+
+    width: 16rem;
+    /*  Height more than 100% meeded because at 100%,
+        Chrome on Android doesn't render full height
+        when hiding the address bar */
+    height: 150%;
+    overflow-y: hidden;
+
+    transition: transform 0.3s ease;
+}
+
+/* Hidden state styling for left and right variants */
+.slidey.slidey--left {
+    left: -16rem;
+}
+.slidey.slidey--right {
+    right: -16rem;
+}
+
+/* Open state styling for left and right variants */
+.slidey.slidey--left.slidey--open {
+    transform: translateX(16rem);
+}
+.slidey.slidey--right.slidey--open {
+    transform: translateX(-16rem);
+}
+
+/* Styling for the switch */
+.slidey__toggle {
+    position: fixed;
+    display: block;
+    z-index: 100;
+    top: 1rem;
+
+    width: 2rem;
+    height: 2rem;
+
+    transform: translateX(0);
+    transition: transform 0.3s ease, background 0.3s ease;
+
+    cursor: pointer;
+
+    /* Cosmetic Stuff */
+    background-color: rgba(0, 0, 0, 0.5);
+    /*background-image: url("Slidey__Toggle.png");
+    background-repeat: no-repeat;
+    background-position: center;*/
+}
+
+.slidey__toggle__lines {
+    position: relative;
+    display: inline-block;
+
+    width: 1.6rem;
+    height: 0.2rem;
+
+    left: 0.2rem;
+    background-color: white;
+
+    border-radius: 3px;
+    transition: background 0.3s ease;
+}
+.slidey__toggle__lines::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+
+    width: 1.6rem;
+    height: 0.2rem;
+
+    background-color: white;
+
+    border-radius: 4px;
+    transition: transform 0.3s ease, top 0.3s ease;
+
+    top: -0.5rem;
+    transform-origin: 50% 50%;
+}
+.slidey__toggle__lines::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+
+    width: 1.6rem;
+    height: 0.2rem;
+
+    background-color: white;
+
+    border-radius: 3px;
+    transition: transform 0.3s ease, top 0.3s ease;
+
+    top: 0.5rem;
+    transform-origin: 50% 50%;
+}
+
+/* Hidden state styling for left and right variants */
+.slidey.slidey--left ~ .slidey__toggle {
+    left: 1rem;
+}
+.slidey.slidey--right ~ .slidey__toggle {
+    right: 1rem;
+}
+
+/* Open state styling for left and right variants */
+.slidey.slidey--left.slidey--open ~ .slidey__toggle {
+    transform: translateX(16rem);
+    background: transparent;
+}
+.slidey.slidey--right.slidey--open ~ .slidey__toggle {
+    transform: translateX(-16rem);
+    background: transparent;
+}
+
+.slidey.slidey--open ~ .slidey__toggle > .slidey__toggle__lines {
+    background: transparent;
+}
+.slidey.slidey--open ~ .slidey__toggle > .slidey__toggle__lines::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+.slidey.slidey--open ~ .slidey__toggle > .slidey__toggle__lines::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.slidey__mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    width: 100%;
+    /*  Height more than 100% meeded because at 100%,
+        Chrome on Android doesn't render full height
+        when hiding the address bar */
+    height: 150%;
+
+    background-color: black;
+    opacity: 0;
+
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+
+    visibility: hidden;
+}
+.slidey.slidey--open ~ .slidey__mask {
+    visibility: visible;
+    opacity: 0.7;
+    transition-delay: 0s;
+}
+
+/* Close button */
+.slidey > .slidey__close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+
+    width: 1rem;
+    height: 1rem;
+
+    /* Cosmetic Stuff */
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url("Slidey__Close.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+
+/* Basic Styling, use .slidey--styled to turn on */
+
+.slidey.slidey--styled {
+    /* Basic Styling */
+    background-color: #F8F8F8;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+
+    color: #5C5C5C;
+    text-decoration: none;
+}
+
+.slidey.slidey--styled a {
+    display: block;
+    padding: 0.5rem 1rem;
+
+    text-decoration: inherit;
+    color: inherit;
+    font-weight: bold;
+
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+    text-indent: 1rem;
+}
+.slidey.slidey--styled a:active {
+    color: black;
+}
+.slidey.slidey--styled a:not(.slidey__brand):hover {
+    background-color: #DDD;
+    color: black;
+}
+
+.slidey.slidey--styled .slidey__brand {
+    display: block;
+    padding: 0.5rem 1rem;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-indent: 0;
+}

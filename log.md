@@ -1,3 +1,13 @@
+### Signing in @ 4:10AM, 2015-11-18
+
+- Converted ems to rems in CSS.
+- Adjusted sizes and CSS of badge images on homepage.
+- Added the Slidey nav drawer (made many updates to Slidey code, need to update the Slidey project later).
+- Created a digital image from my signature. Will be usiong this in teh nav drawer (possibly even on homepage).
+
+#### ToDo
+- Style elements inside nav drawer.
+
 ### Signing in @ 8:12PM, 2015-10-29
 
 - Added logo images.
