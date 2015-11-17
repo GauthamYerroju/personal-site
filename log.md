@@ -4,6 +4,7 @@
 - Adjusted sizes and CSS of badge images on homepage.
 - Added the Slidey nav drawer. Using translate instead of positioning for sliding, hamburger icon generated with pure CSS and animates to X when drawer is open (need to update the Slidey project later).
 - Created a digital image from my signature. Will be usiong this in the nav drawer (possibly even on homepage).
+- Removed CSS for devlog expand button, added Hide button for devlog banner (removes the devlog banner).
 
 #### ToDo
 - Style elements inside nav drawer.
