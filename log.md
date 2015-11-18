@@ -1,3 +1,8 @@
+### Signing in @ 4:21AM, 2015-11-18
+
+- Fixed pixel blurring of the lines in the nav toggle button by converting dimensions to pixels instead of rems/percentages.
+- Tweaked animation timings of nav toggle button.
+
 ### Signing in @ 4:10AM, 2015-11-18
 
 - Converted ems to rems in CSS.
