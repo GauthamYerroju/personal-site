@@ -80,7 +80,7 @@
     background-color: white;
 
     border-radius: 3px;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease 0.3s;
 }
 .slidey__toggle__lines::before,
 .slidey__toggle__lines::after {
@@ -94,7 +94,7 @@
     background-color: white;
 
     border-radius: 3px;
-    transition: transform 0.3s ease, top 0.3s ease;
+    transition: transform 0.3s ease 0.3s, top 0.3s ease 0.3s;
 
     transform-origin: 50% 50%;
 }
