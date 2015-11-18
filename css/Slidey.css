@@ -63,6 +63,14 @@
     background-position: center;*/
 }
 
+/* Hidden state styling for left and right variants */
+.slidey.slidey--left ~ .slidey__toggle {
+    left: 1rem;
+}
+.slidey.slidey--right ~ .slidey__toggle {
+    right: 1rem;
+}
+
 .slidey__toggle__lines {
     position: relative;
     display: inline-block;
@@ -76,7 +84,8 @@
     border-radius: 3px;
     transition: background 0.3s ease;
 }
-.slidey__toggle__lines::before {
+.slidey__toggle__lines::before,
+.slidey__toggle__lines::after {
     content: "";
     position: absolute;
     display: inline-block;
@@ -89,32 +98,13 @@
     border-radius: 4px;
     transition: transform 0.3s ease, top 0.3s ease;
 
-    top: -0.5rem;
     transform-origin: 50% 50%;
+}
+.slidey__toggle__lines::before {
+    top: -0.5rem;
 }
 .slidey__toggle__lines::after {
-    content: "";
-    position: absolute;
-    display: inline-block;
-
-    width: 1.6rem;
-    height: 0.2rem;
-
-    background-color: white;
-
-    border-radius: 3px;
-    transition: transform 0.3s ease, top 0.3s ease;
-
     top: 0.5rem;
-    transform-origin: 50% 50%;
-}
-
-/* Hidden state styling for left and right variants */
-.slidey.slidey--left ~ .slidey__toggle {
-    left: 1rem;
-}
-.slidey.slidey--right ~ .slidey__toggle {
-    right: 1rem;
 }
 
 /* Open state styling for left and right variants */
