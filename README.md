@@ -1,3 +1,10 @@
+## UPDATE:
+Since deploying this website, my web host [Hostinger](https://www.hostinger.com/) decided to remove free hosting and decided to axe my website without informing me in any way.
+
+http://gauthamyerroju.com now hosts my new website (a blog, actually), and this project is available at http://gauthamyerroju.com/personal-site.
+
+I am still working on improving my blog and this project (or some form of it) will reside on an Aboutpag eon my new site.
+
 # Personal Website
 
 This is the repo for my personal website http://gauthamyerroju.com
